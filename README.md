@@ -2,10 +2,13 @@
 # Struktur Basis Data Proses Pelamar Kerja
 ![6](https://github.com/user-attachments/assets/2337acb7-c36d-4380-a630-622221185b3b)
 
+# Entity Relationship Diagram (ERD) Penjelasan
 
 ERD ini menggambarkan proses bagaimana data pelamar kerja diproses dan disalurkan ke perusahaan atau tempat kerja yang dilamar melalui platform penyedia layanan kerja online.
 
-## Entitas dan Atribut
+## Rancangan
+
+### Entitas dan Atribut
 
 1. **Pelamar Pekerjaan**
    - Atribut:
@@ -14,9 +17,9 @@ ERD ini menggambarkan proses bagaimana data pelamar kerja diproses dan disalurka
      - Ijazah
      - Transkrip
 
- **Melamar Pekerjaan**
+2. **Melamar Pekerjaan**
 
-2. **Platform Penyedia Layanan Kerja Online**
+3. **Platform Penyedia Layanan Kerja Online**
    - Atribut:
      - Nama akun
      - Nomor ID
@@ -26,9 +29,9 @@ ERD ini menggambarkan proses bagaimana data pelamar kerja diproses dan disalurka
      - Pendidikan terakhir
      - Pengalaman kerja
 
- **Menyalurkan Data Pelamar**
+4. **Menyalurkan Data Pelamar**
 
-3. **Perusahaan/Tempat Kerja yang Dilamar**
+5. **Perusahaan/Tempat Kerja yang Dilamar**
    - Atribut:
      - Jenis pekerjaan
      - Status pekerjaan
@@ -37,7 +40,7 @@ ERD ini menggambarkan proses bagaimana data pelamar kerja diproses dan disalurka
      - Kualifikasi pekerjaan
      - Job description (deskripsi pekerjaan)
 
-## Relasi
+### Relasi
 
 1. **Pelamar Pekerjaan → Melamar Pekerjaan**
    - **Relasi**: Satu pelamar pekerjaan bisa melamar ke beberapa pekerjaan.
@@ -59,8 +62,19 @@ ERD ini menggambarkan proses bagaimana data pelamar kerja diproses dan disalurka
    - **Relasi**: Perusahaan menyimpan informasi tentang berbagai aspek pekerjaan yang ditawarkan seperti jenis pekerjaan, status pekerjaan, level pekerjaan, persyaratan tertentu, kualifikasi pekerjaan, dan deskripsi pekerjaan.
    - **Tipe Relasi**: One-to-Many (satu-ke-banyak), karena satu perusahaan bisa memiliki banyak pekerjaan dengan berbagai persyaratan dan kualifikasi.
 
-## Garis Besar Relasi
-- **One-to-Many**: Satu entitas di satu sisi bisa memiliki banyak entitas di sisi lainnya.
-- **Many-to-One**: Banyak entitas di satu sisi bisa terhubung ke satu entitas di sisi lainnya.
+ Tujuan
 
-Relasi-relasi dalam ERD ini menggambarkan alur pelamar yang memulai dengan data pribadi mereka, melamar pekerjaan melalui platform, dan akhirnya data mereka disalurkan ke perusahaan yang membutuhkan.
+1. **Efisiensi Pencarian Kerja**: Mempermudah pelamar pekerjaan untuk menemukan dan melamar pekerjaan yang sesuai dengan kualifikasi dan preferensi mereka melalui platform penyedia layanan kerja online.
+   
+2. **Manajemen Data**: Memastikan bahwa data pelamar dikelola dengan baik, termasuk informasi pribadi, pendidikan, pengalaman kerja, dan keahlian yang dimiliki.
+
+3. **Penyaluran Data yang Tepat**: Memastikan data pelamar disalurkan dengan tepat ke perusahaan atau tempat kerja yang membutuhkan sesuai dengan jenis pekerjaan, kualifikasi, dan persyaratan yang ditetapkan.
+
+4. **Optimalisasi Proses Rekrutmen**: Membantu perusahaan dalam proses rekrutmen dengan menyediakan data pelamar yang relevan dan sesuai dengan kriteria pekerjaan yang dibutuhkan.
+
+5. **Transparansi dan Akurasi Informasi**: Menyediakan informasi yang akurat dan transparan tentang pekerjaan yang ditawarkan oleh perusahaan, termasuk deskripsi pekerjaan, status pekerjaan, level pekerjaan, dan persyaratan tertentu.
+
+6. **Peningkatan Peluang Kerja**: Meningkatkan peluang kerja bagi pelamar dengan memperluas akses mereka ke berbagai lowongan pekerjaan melalui platform online.
+
+
+Dengan laporan-laporan ini, kita dapat menganalisis data pelamar, proses lamaran, dan lowongan pekerjaan yang tersedia, sehingga dapat membantu dalam pengambilan keputusan yang lebih baik dalam proses rekrutmen.
